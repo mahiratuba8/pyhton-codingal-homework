@@ -1,0 +1,25 @@
+class square:
+    def __init__(self, sidelength):
+        self.sidelength= sidelength
+    def area(self):
+        return self.sidelength*self.sidelength
+    def perimeter(self):
+        return 4*self.sidelength  
+
+class triangle:
+    def __init__(self, base, height):
+        self.base=base
+        self.height=height
+    def area(self):
+        #A = 1/2 × b × h.
+        return 1/2*self.base*self.height
+    
+
+
+obj1 = square(5)
+print("area of a square is ", obj1.area())
+print("the perimeter f the square is", obj1.perimeter())
+
+obj2= triangle(5, 3)
+print("the area of the triangle", obj2.area())
+        
